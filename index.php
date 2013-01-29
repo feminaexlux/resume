@@ -1,3 +1,11 @@
+<?php
+	$html = date('Y') - 2002;
+	$linux = date('Y') - 2002;
+	$mysql_php = date('Y') - 2002;
+	$struts_hibernate_spring = date('Y') - 2010;
+	$play_ruby_boostrap = date('Y') - 2012;
+	$rabbitmq = date('Y') - 2012;
+?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -16,6 +24,7 @@
 		<![endif]-->
 		<link href="stylesheets/screen.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print">
+		<link href="stylesheets/media.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<article id="resume">
@@ -62,12 +71,12 @@
 				<div class="content">
 					<ul>
 						<!-- LINKS AHOY -->
-						<li>11 years of experience with HTML programming, and LAMP and WAMP configurations.</li>
-						<li>11 years of active use with the Linux/UNIX operating system environments, such as <a href="https://www.redhat.com/">Red Hat</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.debian.org/">Debian</a>, and <a href="https://www.archlinux.org/" title="My current favorite">Arch</a>.</li>
-						<li>6 years experience with <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://www.python.org/">Python</a> and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature filled IDE I've seen">IntelliJ IDEA</a>.</li>
-						<li>3 years of experience with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>, <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://www.springsource.org/">Spring</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <span title="Site is down...">JUnit</span>, <a href="https://code.google.com/p/mockito/">Mockito</a>, and <a href="https://code.google.com/p/powermock/" title="Definitely introduces a performance hit for testing">PowerMock</a>.</li>
-						<li>1 year of experience with <a href="http://www.playframework.org/">Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
-						<li>1 year of experience with <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation.</li>
+						<li><?php echo $html; ?> years of experience with HTML programming, and LAMP and WAMP configurations.</li>
+						<li><?php echo $linux; ?> years of active use with the Linux/UNIX operating system environments, such as <a href="https://www.redhat.com/">Red Hat</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.debian.org/">Debian</a>, and <a href="https://www.archlinux.org/" title="My current favorite">Arch</a>.</li>
+						<li><?php echo $mysql_php; ?> years experience with <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://www.python.org/">Python</a> and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature filled IDE I've seen">IntelliJ IDEA</a>.</li>
+						<li><?php echo $struts_hibernate_spring; ?> years of experience with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>, <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://www.springsource.org/">Spring</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <span title="Site is down...">JUnit</span>, <a href="https://code.google.com/p/mockito/">Mockito</a>, and <a href="https://code.google.com/p/powermock/" title="Definitely introduces a performance hit for testing">PowerMock</a>.</li>
+						<li><?php echo $play_ruby_boostrap; ?> year of experience with <a href="http://www.playframework.org/">Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
+						<li><?php echo $rabbitmq; ?> year of experience with <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation.</li>
 						<li>Active utilization of virtualization technologies like <a href="http://www.vmware.com/">VMWare</a>, <a href="https://www.virtualbox.org/">Virtualbox</a> and <a href="https://www.microsoft.com/windows/virtual-pc/">Virtual PC</a>.</li>
 						<li>Extensive experience with <a href="http://www.adobe.com/products/creativesuite.html" title="Student discount came in incredibly helpful">Adobe products</a>, such as Photoshop, Illustrator, Acrobat, Dreamweaver and Flash.</li>
 						<li>Extensive use of third party software/plugins like <a href="http://www.webyog.com/">SQLYog</a>, <a href="http://www.heidisql.com/">HeidiSQL</a>, <a href="http://www.quest.com/toad-for-mysql/">Toad</a>, <a href="http://www.terracotta.org/">Terracotta</a>, <a href="http://www.splunk.com/" title="Best indexer for logs">Splunk</a>, <a href="http://newrelic.com" title="Nice statistics visualizations">New Relic</a>, <a href="http://jenkins-ci.org/">Jenkins CI</a>, <a href="https://code.google.com/p/gerrit/">Gerrit</a>, and <a href="https://www.atlassian.com/" title="These are very good products!">Atlassian products</a> like JIRA, Confluence, Bamboo and Fisheye.</li>
@@ -104,13 +113,30 @@
 							</section>
 						</dd>
 					</dl>
+
+					<hr>
+
+					<dl>
+						<time datetime="2008-12-01">December 2008 – September 2009</time>
+						<dt><strong>Student Programmer</strong> at <a href="http://www.picsauditing.com/">Research Computing Support, UC Irvine</a></dt>
+						<dd>
+							<section class="summary">
+								<p>
+									Responsible for the creation of an interactive and dynamic online system to manage data center information. Functions include dynamic table generation, data storage into MySQL databases, searches, nightly PDF/image generation, and user management.
+								</p>
+								<p>
+									Information  and  Academic  Technologies  of  UCI  will  use  this  highly  regarded system to maintain up to date information about data centers within UCI, keeping track of server locations and server statuses, unifying geographic information with detailed component properties.
+								</p>
+							</section>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			
 			<footer>
 				<hr>
 				<p>Last updated 2013-01-28</p>
-				<p>&copy; <span title="aka Ulanda S. Aung">Lani Aung</span></p>
+				<p>&copy; <span title="aka Ulanda S. Aung"><a href="mailto:uaung@alumni.uci.edu">Lani Aung</a></span></p>
 			</footer>
 		</article>
 		<!--[if lt IE 9]>

@@ -1,6 +1,6 @@
 body
 {
-	background-color: #CCC;
+	background-color: #EFE9E0;
 	color: #000;
 	font-family: "Amethysta";
 	padding-top: 1em;
@@ -23,6 +23,7 @@ a:active
 article
 {
 	margin: 0 auto;
+	max-width: 1440px;
 	width: 90%;
 }
 
@@ -37,6 +38,18 @@ div
 	padding: 0;
 }
 
+dt
+{
+	border-bottom: 1px solid #999;
+}
+
+dt,
+li,
+p
+{
+	margin: 0.5em 0;
+}
+
 footer
 {
 	clear: both;
@@ -47,11 +60,13 @@ footer
 
 h1
 {
+	font-family: "Fjalla One";
 	font-size: 4em;
 }
 
 h2
 {
+	font-family: "Fjalla One";
 	font-size: 1.5em;
 	line-height: 2em;
 }
@@ -114,9 +129,4 @@ time
 .screen
 {
 	display: inherit;
-}
-
-.soft_divider
-{
-	border-bottom: 1px solid #999;
 }
