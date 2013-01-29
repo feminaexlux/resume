@@ -1,0 +1,122 @@
+body
+{
+	background-color: #CCC;
+	color: #000;
+	font-family: "Amethysta";
+	padding-top: 1em;
+	text-align: center;
+}
+
+a
+{
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover,
+a:active
+{
+	color: #666;
+	text-decoration: underline;
+}
+
+article
+{
+	margin: 0 auto;
+	width: 90%;
+}
+
+dd
+{
+	text-indent: 2em;
+}
+
+div
+{
+	margin: 0;
+	padding: 0;
+}
+
+footer
+{
+	clear: both;
+	font-size: 0.75em;
+	text-align: right;
+	width: 100%;
+}
+
+h1
+{
+	font-size: 4em;
+}
+
+h2
+{
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+header section div
+{
+	display: inline;
+}
+
+hr
+{
+	border: none;
+	border-bottom: 1px solid #333;
+}
+
+section header
+{
+	float: left;
+	font-family: "Fjalla One";
+	font-size: 3em;
+	font-variant: small-caps;
+	width: 20%;
+}
+
+section ul
+{
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+section .content
+{
+	display: inline-block;
+	line-height: 1.5em;
+	text-align: justify;
+	width: 80%;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+time
+{
+	float: right;
+	font-style: oblique;
+}
+
+.divider
+{
+	margin: 0 1em;
+}
+
+.print
+{
+	display: none;
+}
+
+.screen
+{
+	display: inherit;
+}
+
+.soft_divider
+{
+	border-bottom: 1px solid #999;
+}
