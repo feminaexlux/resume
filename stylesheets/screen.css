@@ -18,16 +18,16 @@ a:active
 	color: #666;
 }
 
+abbr
+{
+	border-bottom: 1px dotted #999;
+}
+
 article
 {
 	margin: 0 auto;
 	max-width: 1440px;
 	width: 90%;
-}
-
-dd
-{
-	text-indent: 2em;
 }
 
 div
@@ -80,6 +80,11 @@ hr
 	border-bottom: 1px solid #333;
 }
 
+p
+{
+	text-indent: 2em;
+}
+
 section header
 {
 	float: left;
@@ -113,6 +118,13 @@ time
 	float: right;
 	font-style: oblique;
 }
+
+/*
+ul li ul
+{
+	margin-left: 0.5em;
+}
+*/
 
 .divider
 {
