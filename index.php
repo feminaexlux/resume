@@ -18,7 +18,8 @@
 
 		<link href="http://fonts.googleapis.com/css?family=Amethysta|Fjalla+One" rel="stylesheet" type="text/css">
 		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+		<link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+		<link href="http://microformats.org/profile/hcard" rel="profile">
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="stylesheets/font-awesome-ie7.min.css">
 		<![endif]-->
@@ -28,13 +29,13 @@
 	</head>
 	<body>
 		<article id="resume">
-			<header>
-				<h1 title="Also known as Ulanda S. Aung">Lani Aung</h1>
+			<header class="vCard">
+				<h1 title="Also known as Ulanda S. Aung" class="fn">Lani S. Aung</h1>
 				<h2>Java &amp; Web Developer</h2>
 				<hr>
 				<section id="contact-details">
 					<div class="address">
-						<i class="icon-circle-blank"></i> Irvine, CA
+						<i class="icon-circle-blank"></i> <span class="locality">Irvine</span>, <abbr class="region" title="California">CA</abbr>
 					</div>
 					<div class="divider">|</div>
 					<div class="email">
@@ -45,7 +46,7 @@
 						</a>
 					</div>
 					<div class="divider">|</div>
-					<div class="site_url">
+					<div class="site_url url">
 						<i class="icon-link"></i>
 						<a href="http://flavoredorange.org">
 							<span class="screen">Website</span>
@@ -90,7 +91,7 @@
 
 			<hr>
 
-			<section class="previous_experiences">
+			<section class="experience">
 				<header>
 					Previous Experiences
 				</header>
@@ -131,6 +132,54 @@
 						</dd>
 					</dl>
 				</div>
+			</section>
+
+			<section class="education">
+				<header>
+					Education
+				</header>
+				
+				<div class="content">
+					<dl>
+						<time datetime="2009-08-10">Summery 2009</time>
+						<dt>Graduated from <a href="http://www.uci.edu/">University of California, Irvine</a>.</dt>
+						<dd>
+							<section class="summary">
+								<p>
+									Notable achievements include leading multiple projects that combined became a whole new line of service employing user level data (expanded from company level data), attracting new customers and broadening the client base. Implemented new features that provided major sources of revenue, such as allowing for pre-registration, expediting the customer-to-company relationship establishment. Became team leader and release manager, leading code reviews, training, paired programming, and giving presentations on technologies.
+								</p>
+								<p>
+									Internationalized a once US-only site application to reach global audiences, using home grown technology that was easily exportable and importable for ease of translation.
+								</p>
+								<p>
+									Experienced with communicating effectively and directly with clients and staff members throughout all departments, providing flexibility when requirements change, delivering on time, robust products focusing on 100% stability and satisfaction. Several projects were given praise and acclaim from senior level management, personally became the go-to woman for in depth explanations and quick assessments.
+								</p>
+							</section>
+						</dd>
+					</dl>
+
+					<hr>
+
+					<dl>
+						<time datetime="2008-12-01">December 2008 – September 2009</time>
+						<dt><strong>Student Programmer</strong> at <a href="http://www.picsauditing.com/">Research Computing Support, UC Irvine</a></dt>
+						<dd>
+							<section class="summary">
+								<p>
+									Responsible for the creation of an interactive and dynamic online system to manage data center information. Functions include dynamic table generation, data storage into MySQL databases, searches, nightly PDF/image generation, and user management.
+								</p>
+								<p>
+									Information  and  Academic  Technologies  of  UCI  will  use  this  highly  regarded system to maintain up to date information about data centers within UCI, keeping track of server locations and server statuses, unifying geographic information with detailed component properties.
+								</p>
+							</section>
+						</dd>
+					</dl>
+				</div>
+
+				EDUCATION Summer 2009 graduate of University of California, Irvine.
+Bachelor of Science degree achieved in Biological Sciences, with a minor in
+Information and Computer Science.
+GPA of 3.85 in Information and Computer Science minor.
 			</section>
 			
 			<footer>
