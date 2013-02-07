@@ -1,7 +1,7 @@
 body
 {
 	background-color: #FFF;
-	font-size: 12px;
+	font-size: 11.5px;
 	padding: 0;
 }
 
@@ -19,6 +19,11 @@ abbr
 article
 {
 	width: 80%;
+}
+
+footer
+{
+	display: none;
 }
 
 h1
@@ -39,6 +44,12 @@ section ul li
 section header
 {
 	font-size: 1.5em;
+}
+
+time
+{
+	clear: both;
+	float: none;
 }
 
 #contact-details
