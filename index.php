@@ -70,10 +70,8 @@
 					<ul>
 						<!-- LINKS AHOY -->
 						<li><?php echo $html; ?> years of experience with HTML programming, and <abbr title="Linux, Apache (httpd), MySQL, PHP">LAMP</abbr> and <abbr title="Windows, Apache (httpd), MySQL, PHP">WAMP</abbr> configurations.</li>
-						<ul>
-							<li><?php echo $linux; ?> years of active use with the Linux/UNIX operating system environments, such as <a href="https://www.redhat.com/">Red Hat</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.debian.org/">Debian</a>, and <a href="https://www.archlinux.org/" title="My current favorite">Arch</a>.</li>
-							<li><?php echo $mysql_php; ?> years experience with <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://www.python.org/">Python</a> and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature filled IDE I've seen">IntelliJ IDEA</a>.</li>
-						</ul>
+						<li><?php echo $linux; ?> years of active use with the Linux/UNIX operating system environments, such as <a href="https://www.redhat.com/">Red Hat</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.debian.org/">Debian</a>, and <a href="https://www.archlinux.org/" title="My current favorite">Arch</a>.</li>
+						<li><?php echo $mysql_php; ?> years experience with <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://www.python.org/">Python</a> and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature filled IDE I've seen">IntelliJ IDEA</a>.</li>
 						<li><?php echo $struts_hibernate_spring; ?> years of experience with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>, <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://www.springsource.org/">Spring</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <span title="Site is down...">JUnit</span>, <a href="https://code.google.com/p/mockito/">Mockito</a>, and <a href="https://code.google.com/p/powermock/" title="Definitely introduces a performance hit for testing">PowerMock</a>.</li>
 						<li><?php echo $play_ruby_boostrap; ?> year of experience with <a href="http://www.playframework.org/">Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
 						<li><?php echo $rabbitmq; ?> year of experience with <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation.</li>
@@ -108,7 +106,7 @@
 				
 				<div class="content">
 					<dl>
-						<time datetime="2010-01-04">January 2010</time>
+						<dt><time datetime="2010-01-04">January 2010</time></dt>
 						<dt><strong>Java Developer</strong> at <a href="http://www.picsauditing.com/">PICS, Inc</a></dt>
 						<dd>
 							<section class="summary">
@@ -128,7 +126,7 @@
 					<hr>
 
 					<dl>
-						<time datetime="2008-12-01">December 2008 – September 2009</time>
+						<dt><time datetime="2008-12-01">December 2008 – September 2009</time></dt>
 						<dt><strong>Student Programmer</strong> at <a href="http://oit.uci.edu/">Research Computing Support, UC Irvine</a></dt>
 						<dd>
 							<section class="summary">
@@ -153,7 +151,7 @@
 				
 				<div class="content">
 					<dl>
-						<time datetime="2009-08-10">Summer 2009</time>
+						<dt><time datetime="2009-08-10">Summer 2009</time></dt>
 						<dt>Graduated from <a href="http://www.uci.edu/" title="Zot zot">University of California, Irvine</a>.</dt>
 						<dd>
 							<section class="summary">
