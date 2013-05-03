@@ -165,6 +165,9 @@
 							</section>
 						</dd>
 					</dl>
+
+					<hr>
+
 					<dl>
 						<dt><time datetime="2013-04-23">April 2013</time></dt>
 						<dt>Certified ScrumMaster Training</dt>
@@ -181,7 +184,7 @@
 			
 			<footer>
 				<hr>
-				<p>Last updated 2013-05-02</p>
+				<p>Last updated 2013-05-03</p>
 				<p>&copy; <span title="aka Ulanda S. Aung"><a href="mailto:uaung@alumni.uci.edu">Lani Aung</a></span></p>
 			</footer>
 		</article>
