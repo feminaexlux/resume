@@ -108,7 +108,7 @@
 				<div class="content">
 					<dl>
 						<dt><time datetime="2010-01-04">January 2010</time></dt>
-						<dt><strong>Java Developer</strong> at <a href="http://www.picsauditing.com/">PICS, Inc</a></dt>
+						<dt><strong>Java Developer</strong> at <a href="http://www.picsauditing.com/">PICS Auditing, LLC</a></dt>
 						<dd>
 							<section class="summary">
 								<p>
