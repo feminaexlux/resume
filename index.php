@@ -1,18 +1,19 @@
 <?php
-	$html = date('Y') - 2002;
-	$linux = date('Y') - 2002;
-	$mysql_php = date('Y') - 2002;
-	$struts_hibernate_spring = date('Y') - 2010;
-	$play_ruby_boostrap = date('Y') - 2012;
-	$rabbitmq = date('Y') - 2012;
+	$year = date('Y');
+	$html = $year - 2002;
+	$linux = $year - 2002;
+	$mysql_php = $year - 2002;
+	$struts_hibernate_spring = $year - 2010;
+	$play_ruby_boostrap = $year - 2012;
+	$rabbitmq = $year - 2012;
 ?>
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Lani Aung</title>
+		<title>Lani Aung, CSM</title>
 		
 		<meta charset="utf-8">
-		<meta name="description" content="The resume of Lani Aung, java and web developer">
+		<meta name="description" content="The resume of Lani Aung, CSM, java and web developer">
 		<meta name="keywords" content="java,web,developer,resume" />
 		<meta name="author" content="Lani Aung">
 
@@ -27,7 +28,7 @@
 	<body>
 		<article id="resume">
 			<header class="vCard">
-				<h1 title="Also known as Ulanda S. Aung" class="fn">Lani S. Aung</h1>
+				<h1 title="Also known as Ulanda S. Aung" class="fn">Lani S. Aung, <a href="assets/CSMCertificate.pdf"><abbr title="Certified ScrumMaster">CSM</abbr></a></h1>
 				<h2>Java &amp; Web Developer</h2>
 				<hr>
 				<section id="contact-details">
@@ -164,12 +165,23 @@
 							</section>
 						</dd>
 					</dl>
+					<dl>
+						<dt><time datetime="2013-04-23">April 2013</time></dt>
+						<dt>Certified ScrumMaster Training</dt>
+						<dd>
+							<section class="summary">
+								<p>
+									2 day seminar on Scrum fundamentals, lead by Carlton Nettleton of <a href="http://lookforwardconsulting.com/">Look Forward Consulting</a>.
+								</p>
+							</section>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			
 			<footer>
 				<hr>
-				<p>Last updated 2013-02-03</p>
+				<p>Last updated 2013-05-02</p>
 				<p>&copy; <span title="aka Ulanda S. Aung"><a href="mailto:uaung@alumni.uci.edu">Lani Aung</a></span></p>
 			</footer>
 		</article>
