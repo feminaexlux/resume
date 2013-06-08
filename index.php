@@ -13,8 +13,8 @@
 		<title>Lani Aung, CSM</title>
 		
 		<meta charset="utf-8">
-		<meta name="description" content="The resume of Lani Aung, CSM, java and web developer">
-		<meta name="keywords" content="java,web,developer,resume" />
+		<meta name="description" content="The resume of Lani Aung, CSM, software engineer & web developer">
+		<meta name="keywords" content="java,software,engineer,web,developer,resume" />
 		<meta name="author" content="Lani Aung">
 
 		<link href="http://microformats.org/profile/hcard" rel="profile">
@@ -27,40 +27,40 @@
 	</head>
 	<body>
 		<article id="resume">
-			<header class="vCard">
-				<h1 title="Also known as Ulanda S. Aung" class="fn">Lani S. Aung, <a href="assets/CSMCertificate.pdf"><abbr title="Certified ScrumMaster">CSM</abbr></a></h1>
-				<h2>Java &amp; Web Developer</h2>
-				<hr>
+			<header id="hcard-Lani-Aung" class="vcard">
+				<h1 title="Also known as Ulanda S. Aung" class="fn n">
+					<span class="nickname">Lani</span> S. <span class="family-name">Aung</span>, <a href="assets/CSMCertificate.pdf"><abbr title="Certified ScrumMaster" class="honorific-suffix">CSM</abbr></a>
+				</h1>
+				<h2>Software Engineer &amp; Web Developer</h2>
+				<hr />
 				<section id="contact-details">
-					<div class="address">
-						<i class="icon-circle-blank"></i> <span class="locality">Irvine</span>, <abbr class="region" title="California">CA</abbr>
+					<div class="address adr">
+						<span class="screen"><i class="icon-circle-blank"></i></span>
+						<span class="locality">Irvine</span>, <span class="region"><abbr title="California">CA</abbr></span>
 					</div>
 					<div class="divider">|</div>
-					<div class="email">
-						<i class="icon-envelope"></i>
-						<a href="mailto:uaung@alumni.uci.edu">
-							<span class="screen">Email</span>
+					<div>
+						<a href="mailto:uaung@alumni.uci.edu" class="email">
+							<span class="screen"><i class="icon-envelope"></i> Email</span>
 							<span class="print">uaung@alumni.uci.edu</span>
 						</a>
 					</div>
 					<div class="divider">|</div>
-					<div class="site_url url">
-						<i class="icon-link"></i>
-						<a href="http://flavoredorange.org">
-							<span class="screen">Website</span>
+					<div class="site_url">
+						<a href="http://flavoredorange.org" class="url">
+							<span class="screen"><i class="icon-link"></i> Website</span>
 							<span class="print">http://flavoredorange.org</span>
 						</a>
 					</div>
 					<div class="divider">|</div>
 					<div class="google_plus">
-						<i class="icon-google-plus-sign"></i>
-						<a href="https://plus.google.com/101567516515376968537">
-							<span class="screen">Social</span>
+						<a href="https://plus.google.com/101567516515376968537" class="url">
+							<span class="screen"><i class="icon-google-plus-sign"></i> Social</span>
 							<span class="print">https://plus.google.com/101567516515376968537</span>
 						</a>
 					</div>
 				</section>
-				<hr>
+				<hr />
 			</header>
 
 			<section class="skills">
@@ -81,7 +81,7 @@
 						<li>Extensive use of third party software/plugins like <a href="http://www.webyog.com/">SQLYog</a>, <a href="http://www.heidisql.com/">HeidiSQL</a>, <a href="http://www.quest.com/toad-for-mysql/">Toad</a>, <a href="http://www.terracotta.org/">Terracotta</a>, <a href="http://www.splunk.com/" title="Best indexer for logs">Splunk</a>, <a href="http://newrelic.com" title="Nice statistics visualizations">New Relic</a>, <a href="http://jenkins-ci.org/">Jenkins CI</a>, <a href="https://code.google.com/p/gerrit/">Gerrit</a>, and <a href="https://www.atlassian.com/" title="These are very good products!">Atlassian products</a> like JIRA, Confluence, Bamboo and Fisheye.</li>
 					</ul>
 
-					<hr>
+					<hr />
 
 					<p>
 						Highly adaptable, quick to learn new methods and implementations.
@@ -98,7 +98,7 @@
 				</div>
 			</section>
 
-			<hr>
+			<hr />
 
 			<section class="experience">
 				<header>
@@ -124,7 +124,7 @@
 						</dd>
 					</dl>
 
-					<hr>
+					<hr />
 
 					<dl>
 						<dt><time datetime="2008-12-01">December 2008 – September 2009</time></dt>
@@ -143,7 +143,7 @@
 				</div>
 			</section>
 
-			<hr>
+			<hr />
 
 			<section class="education">
 				<header>
@@ -166,7 +166,7 @@
 						</dd>
 					</dl>
 
-					<hr>
+					<hr />
 
 					<dl>
 						<dt><time datetime="2013-04-23">April 2013</time></dt>
@@ -181,10 +181,35 @@
 					</dl>
 				</div>
 			</section>
+
+			<hr />
+
+			<section class="additional-links">
+				<header>
+					Additional Links
+				</header>
+				
+				<div class="content">
+					<ul>
+						<li>
+							<a href="https://github.com/feminaexlux" class="url"><span class="screen"><i class="icon-github-sign"></i> Github</span><span class="print">https://github.com/feminaexlux</span></a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com/in/laniaung/" class="url"><span class="screen"><i class="icon-linkedin-sign"></i> LinkedIn</span><span class="print">http://www.linkedin.com/in/laniaung/</span></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/feminaexlux" class="url"><span class="screen"><i class="icon-facebook-sign"></i> Facebook</span><span class="print">https://www.facebook.com/feminaexlux</span></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/feminaexlux" class="url"><span class="screen"><i class="icon-twitter-sign"></i> Twitter</span><span class="print">https://www.twitter.com/feminaexlux</span></a>
+						</li>
+					</ul>
+				</div>
+			</section>
 			
 			<footer>
-				<hr>
-				<p>Last updated 2013-05-03</p>
+				<hr />
+				<p>Last updated 2013-06-07</p>
 				<p>&copy; <span title="aka Ulanda S. Aung"><a href="mailto:uaung@alumni.uci.edu">Lani Aung</a></span></p>
 			</footer>
 		</article>

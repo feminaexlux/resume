@@ -62,14 +62,6 @@ time
 	margin: 0;
 }
 
-.icon-envelope::before,
-.icon-link::before,
-.icon-google-plus-sign::before,
-.icon-circle-blank::before
-{
-	content: "";
-}
-
 .print
 {
 	display: inherit;
