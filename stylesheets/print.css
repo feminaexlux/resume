@@ -1,12 +1,13 @@
 body
 {
 	background-color: #FFF;
-	font-size: 11.5px;
+	font-size: 12px;
 	padding: 0;
 }
 
 a
 {
+	border: none;
 	color: #000;
 	text-decoration: none;
 }
@@ -19,6 +20,13 @@ abbr
 article
 {
 	width: 80%;
+}
+
+dt,
+li,
+p
+{
+	margin: 0.25em 0;
 }
 
 footer
@@ -43,13 +51,12 @@ section ul li
 
 section header
 {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
-time
+ul span.screen
 {
-	clear: both;
-	float: none;
+	display: none;
 }
 
 #contact-details
