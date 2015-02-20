@@ -59,11 +59,14 @@
 				<div class="content col-md-10 col-xs-10">
 					<ul>
 						<!-- LINKS AHOY -->
-						<li><span class="years-longest">At least 12</span> years of experience with HTML programming, and <abbr title="Linux, Apache (httpd), MySQL, PHP">LAMP</abbr> and <abbr title="Windows, Apache (httpd), MySQL, PHP">WAMP</abbr> configurations.</li>
-						<li><span class="years-longest">At least 12</span> years of active use of <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature-filled IDE I've seen">IntelliJ IDEA</a>.</li>
-						<li><span class="years-mid">At least 4</span> years of comfortable familiarity with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>, <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://www.springsource.org/">Spring</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <a href="http://junit.org/" title="Great testing framework.">JUnit</a>, and <a href="https://code.google.com/p/mockito/">Mockito</a>.</li>
-						<li><span class="years-shortest">At least 2</span> years of ongoing learning of <a href="http://www.playframework.org/">the Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
-						<li><span class="years-shortest">At least 2</span> years of using <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation for asynchronous event handling.</li>
+						<li><span class="years" data-start="2002">At least 12 years</span> of experience with HTML programming, and <abbr title="Linux, Apache (httpd), MySQL, PHP">LAMP</abbr> and <abbr title="Windows, Apache (httpd), MySQL, PHP">WAMP</abbr> configurations.</li>
+						<li><span class="years" data-start="2002">At least 12 years</span> of active use of <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a>, and <a href="http://www.java.com/en/">Java</a> using development environments such as <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://www.sublimetext.com/" title="This resume was created using Sublime">Sublime Text</a> and <a href="http://www.jetbrains.com/idea/" title="So far the most complex and feature-filled IDE I've seen">IntelliJ IDEA</a>.</li>
+						<li><span class="years" data-start="2010">At least 4 years</span> of comfortable familiarity with <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://spring.io/projects">Spring Projects</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <a href="http://junit.org/" title="Great testing framework.">JUnit</a>, and <a href="https://code.google.com/p/mockito/">Mockito</a>.</li>
+						<li><span class="years" data-start="2012">At least 2 years</span> of ongoing learning of <a href="http://www.playframework.org/">the Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
+						<li><span class="years" data-start="2014">About 1 year</span> of templating with <a href="http://www.thymeleaf.org/">Thymeleaf</a> and <a href="http://angularjs.org">AngularJS</a>.</li>
+						<li>4 years (2010-2014) of backend development with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>.</li>
+						<li>2 years (2012-2014) of using <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation for asynchronous event handling.</li>
+						<li>
 						<li>Active utilization of virtualization technologies like <a href="http://www.vmware.com/">VMWare</a>, <a href="https://www.virtualbox.org/">Virtualbox</a> and <a href="https://www.microsoft.com/windows/virtual-pc/">Virtual PC</a>.</li>
 						<li>Extensive use of <a href="https://www.atlassian.com/" title="These are very good products!">Atlassian products</a> like JIRA, Confluence, Bamboo and Fisheye.</li>
 					</ul>
@@ -207,9 +210,12 @@
 		<script type="text/javascript">
 			var thisYear = new Date().getFullYear();
 
-			$("span.years-longest").text(thisYear - 2002);
-			$("span.years-mid").text(thisYear - 2010);
-			$("span.years-shortest").text(thisYear - 2012);
+			$("span.years").each(function() {
+				var started = $(this).attr("data-start");
+				var difference = thisYear - started;
+				
+				$(this).text(difference + ' year' + (difference != 1 ? 's' : ''));
+			});
 		</script>
 	</body>
 </html>
