@@ -8,8 +8,8 @@
 		<meta name="keywords" content="java,software,engineer,web,developer,resume">
 		<meta name="author" content="Lani Aung">
 
-		<link href="http://microformats.org/profile/hcard" rel="profile">
-		<link href="http://fonts.googleapis.com/css?family=Amethysta" rel="stylesheet" type="text/css">
+		<link href="//microformats.org/profile/hcard" rel="profile">
+		<link href="//fonts.googleapis.com/css?family=Amethysta" rel="stylesheet" type="text/css">
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="stylesheets/font-awesome-ie7.min.css">
 		<![endif]-->
@@ -46,8 +46,8 @@
 						<span class="print">http://flavoredorange.org</span>
 					</div>
 					<div class="google_plus col-md-2 col-xs-3">
-						<span class="screen"><i class="fa fa-google-plus-square"></i> <a href="http://bit.ly/feminaexlux" class="url">Social</a></span>
-						<span class="print">http://bit.ly/feminaexlux</span>
+						<span class="screen"><i class="fa fa-google-plus-square"></i> <a href="https://plus.google.com/+LaniAung" class="url">Social</a></span>
+						<span class="print">https://plus.google.com/+LaniAung</span>
 					</div>
 				</section>
 				<hr>
@@ -64,6 +64,8 @@
 						<li><span class="years" data-start="2010">At least 4 years</span> of comfortable familiarity with <a href="http://tomcat.apache.org/index.html">Tomcat</a>, <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://spring.io/projects">Spring Projects</a>, <a href="https://maven.apache.org/">Maven</a>, SOAP/WSDL, <a href="http://subversion.apache.org/">SVN</a>/<a href="http://git-scm.com/" title="Not the easiest, but this seems like a clear winner">GIT</a>, <a href="http://junit.org/" title="Great testing framework.">JUnit</a>, and <a href="https://code.google.com/p/mockito/">Mockito</a>.</li>
 						<li><span class="years" data-start="2012">At least 2 years</span> of ongoing learning of <a href="http://www.playframework.org/">the Play 2.0 Framework</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a>.</li>
 						<li><span class="years" data-start="2014">About 1 year</span> of templating with <a href="http://www.thymeleaf.org/">Thymeleaf</a> and <a href="http://angularjs.org">AngularJS</a>.</li>
+						<li><span class="years" data-start="2014">About 1 year</span> of basic database administration using <a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/default.aspx">Microsoft SQL Server</a> (2008, 2012, 2014).</li>
+						<li><span class="years" data-start="2015">Ongoing learning</span> of RazorHTML, C# and .NET frameworks with <a href="http://www.sitecore.net/">Sitecore</a>.</li>
 						<li>4 years (2010-2014) of backend development with <a href="https://struts.apache.org/2.x/index.html">Struts 2</a>.</li>
 						<li>2 years (2012-2014) of using <a href="http://www.rabbitmq.com/">RabbitMQ</a> AMQP implementation for asynchronous event handling.</li>
 						<li>
@@ -89,12 +91,27 @@
 				
 				<div class="content col-md-10 col-xs-10">
 					<dl>
-						<dt><time datetime="2010-04-14">April 2014</time></dt>
+						<dt><time datetime="2015-03-31">March 2015</time></dt>
+						<dt><strong>Programmer / Application Developer (Sitecore)</strong> at <a href="https://www.toastmasters.org">Toastmasters International</a></dt>
+						<dd>
+							<section class="summary">
+								<ul>
+									<li>Maintain and develop new features for the Toastmasters website using .NET / C# with the Sitecore CMS framework and SQL Server database layer.</li>
+								</ul>
+							</section>
+						</dd>
+					</dl>
+
+					<hr>
+				
+					<dl>
+						<dt><time datetime="2014-04-14">April 2014 - March 2015</time></dt>
 						<dt><strong>Java Developer</strong> at <a href="http://www.kronos.com/">Kronos Incorporated</a></dt>
 						<dd>
 							<section class="summary">
 								<ul>
-									<li>Maintain and develop new features for a core product, <a href="http://www.kronos.com/product/public-sector-scheduling/telestaff.aspx" title="Workforce TeleStaff (tm)">Workforce TeleStaff&trade;</a>.</li>
+									<li>Maintain and develop new features for a core product, <a href="http://www.kronos.com/product/public-sector-scheduling/telestaff.aspx" title="Workforce TeleStaff (tm)">Workforce TeleStaff&trade;</a> with Java 7 / 8 and Spring Framework.</li>
+									<li>Updated reporting tools to export to Excel for higher usability.</li>
 								</ul>
 							</section>
 						</dd>
@@ -194,7 +211,7 @@
 			
 			<footer>
 				<hr>
-				<p>Last updated 2014-07-06</p>
+				<p>Last updated 2015-04-14</p>
 				<p>&copy; <span title="aka Ulanda S. Aung"><a href="mailto:uaung@alumni.uci.edu">Lani Aung</a></span></p>
 			</footer>
 		</article>
@@ -214,7 +231,9 @@
 				var started = $(this).attr("data-start");
 				var difference = thisYear - started;
 				
-				$(this).text(difference + ' year' + (difference != 1 ? 's' : ''));
+				if (difference > 0) {
+					$(this).text(difference + ' year' + (difference != 1 ? 's' : ''));
+				}
 			});
 		</script>
 	</body>
