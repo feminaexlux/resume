@@ -59,7 +59,7 @@
 
 				<div class="content col-12 col-md-10">
 					<ul>
-						<li>15 years+ of programming compliant HTML, <abbr title="Cascading Style Sheets">CSS</abbr>, and Javascript, with best practices and utilizing frameworks such as <a href="https://jquery.com/">jQuery</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, and <a href="https://fontawesome.com/">FontAwesome</a>.</li>
+						<li><span class="years" data-start="2002">At least 16 years</span> of programming compliant HTML, <abbr title="Cascading Style Sheets">CSS</abbr>, and Javascript, with best practices and utilizing frameworks such as <a href="https://jquery.com/">jQuery</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, and <a href="https://fontawesome.com/">FontAwesome</a>.</li>
 						<li><span class="years" data-start="2014">At least 3 years</span> of basic database administration using <a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/default.aspx">Microsoft SQL Server</a> (2008, 2012, 2014, 2016) and configuring <a href="http://www.iis.net">IIS</a> (7, 7.5, 8).</li>
 						<li><span class="years" data-start="2015">Ongoing learning</span> of implementing <a href="http://www.sitecore.net/">Sitecore</a> with RazorHTML, C# / .NET frameworks (4.0, 4.5, 4.6), <a href="https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx">Visual Studio</a>, <a href="https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx">Team Foundation Server</a>, and <a href="https://www.jetbrains.com/resharper/" title="Honestly, this is the reason I'm so productive :)">ReSharper</a>.</li>
 						<li><span class="years" data-start="2015">At least 4 years</span> of creating, updating, deploying NuGet .NET 4.5 / standard packages to provide dependencies to the main application.</li>
@@ -109,13 +109,13 @@
 						<dd>
 							<section class="summary">
 								<ul>
-									<li>Maintain and develop new features for the Toastmasters website using .NET / C# with the Sitecore CMS framework and SQL Server database layer.</li>
+									<li>Maintained and developed new features for the Toastmasters website using .NET / C# with the Sitecore CMS framework and SQL Server database layer.</li>
 									<li>Co-lead <abbr title="Service Oriented Architecture">SOA</abbr> initiatives, implementing <abbr title="Windows Communication Foundation">WCF</abbr> and Web API services.</li>
-									<li>Introduce automated testing along with continuous integration.</li>
-									<li>Build robust applications with unit testing.</li>
-									<li>Introduce loosely coupled designs with dependency injection.</li>
-									<li>Create and manage common custom Toastmasters utilities and domain objects as .NET NuGet packages.</li>
-									<li>Transition legacy ERP to <a href="https://dynamics.microsoft.com/en-us/">Dynamics CRM and Dynamics Finance and Operations</a>, connecting over <a href="https://www.odata.org/">OData</a> RESTful APIs.</li>
+									<li>Introduced automated testing along with continuous integration.</li>
+									<li>Built robust applications with unit testing.</li>
+									<li>Introduced loosely coupled designs with dependency injection.</li>
+									<li>Created and managed common custom Toastmasters utilities and domain objects as .NET NuGet packages.</li>
+									<li>Transitioned legacy ERP to <a href="https://dynamics.microsoft.com/en-us/">Dynamics CRM and Dynamics Finance and Operations</a>, connecting over <a href="https://www.odata.org/">OData</a> RESTful APIs.</li>
 								</ul>
 							</section>
 						</dd>
@@ -256,7 +256,7 @@
 			</section>
 			
 			<footer>
-				<p>Last updated 2023-01-09</p>
+				<p>Last updated 2023-01-10</p>
 				<p>&copy; <span title="aka Ulanda S. Aung"><a href="https://fxl.codes">Lani Aung</a></span></p>
 			</footer>
 		</article>
@@ -275,7 +275,9 @@
 				var started = $(this).attr("data-start");
 				var difference = thisYear - started;
 				
-				if (difference > 0) {
+				if (difference > 15)
+					$(this).text("15+ years");
+				else if (difference > 0) {
 					$(this).text(difference + ' year' + (difference != 1 ? 's' : ''));
 				}
 			});
