@@ -1,3 +1,5 @@
 *.sublime-workspace
 .DS_Store
 *.code-workspace
+public
+rainloop
