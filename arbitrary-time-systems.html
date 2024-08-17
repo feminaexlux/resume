@@ -71,7 +71,7 @@
 				const now = new Date();
 				document.getElementById("actual_time").textContent = now.toString();
 
-				const base62d = base62[now.getDate()];
+				const base62d = base62[now.getDate() - 1]; // NOT zero based :(
 				const base62m = base62[now.getMonth()];
 				const base62y = `${base62[Math.floor(now.getFullYear() / 62)]}${base62[now.getFullYear() % 62]}`;
 				const base62h = base62[now.getHours()];
