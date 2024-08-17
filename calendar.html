@@ -8,7 +8,7 @@
         <style>
             html, body {
                 background-color: #000;
-                color: #999;
+                color: #ccc;
                 font-family: "Consolas", monospace;
                 margin: 0;
                 padding: 0;
@@ -42,12 +42,17 @@
                 width: 40px;
             }
 
-            td.num {
-                font-weight: bold;
+            td.today span {
+                border: 2px solid #fff;
+                border-radius: 1rem;
+                padding: 0.25rem;
             }
 
-            .d28, .d29, .d30, .d31 {
-                color: #666;
+            .d28,
+            .d29,
+            .d30,
+            .d31 {
+                color: #000;
             }
 
             .d28 {
@@ -55,23 +60,19 @@
             }
 
             .d29 {
-                background-color: #ffa;
+                background-color: #fe8;
             }
 
             .d30 {
-                background-color: #afa;
+                background-color: #8c8;
             }
 
             .d31 {
-                background-color: #aaf;
+                background-color: #88f;
             }
 
             .today {
                 color: #fff;
-            }
-
-            .today.d28, .today.d29, .today.d30, .today.d31 {
-                color: #000;
             }
         </style>
     </head>
@@ -80,7 +81,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="year" colspan="5">Year</th>
+                        <th class="year" colspan="5"><span>Year</span></th>
                         <th class="col-1"></th>
                         <th class="col-2"></th>
                         <th class="col-3"></th>
@@ -92,102 +93,102 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>8</td>
-                        <td>15</td>
-                        <td>22</td>
-                        <td class="d29">29</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
+                        <td><span>1</span></td>
+                        <td><span>8</span></td>
+                        <td><span>15</span></td>
+                        <td><span>22</span></td>
+                        <td class="d29"><span>29</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>9</td>
-                        <td>16</td>
-                        <td>23</td>
-                        <td class="d30">30</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
+                        <td><span>2</span></td>
+                        <td><span>9</span></td>
+                        <td><span>16</span></td>
+                        <td><span>23</span></td>
+                        <td class="d30"><span>30</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>10</td>
-                        <td>17</td>
-                        <td>24</td>
-                        <td class="d31">31</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
+                        <td><span>3</span></td>
+                        <td><span>10</span></td>
+                        <td><span>17</span></td>
+                        <td><span>24</span></td>
+                        <td class="d31"><span>31</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>11</td>
-                        <td>18</td>
-                        <td>25</td>
+                        <td><span>4</span></td>
+                        <td><span>11</span></td>
+                        <td><span>18</span></td>
+                        <td><span>25</span></td>
                         <td></td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>12</td>
-                        <td>19</td>
-                        <td>26</td>
+                        <td><span>5</span></td>
+                        <td><span>12</span></td>
+                        <td><span>19</span></td>
+                        <td><span>26</span></td>
                         <td></td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>13</td>
-                        <td>20</td>
-                        <td>27</td>
+                        <td><span>6</span></td>
+                        <td><span>13</span></td>
+                        <td><span>20</span></td>
+                        <td><span>27</span></td>
                         <td></td>
-                        <td class="col-6">Sat</td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
+                        <td class="col-6"><span>Sat</span></td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>14</td>
-                        <td>21</td>
-                        <td class="d28">28</td>
+                        <td><span>7</span></td>
+                        <td><span>14</span></td>
+                        <td><span>21</span></td>
+                        <td class="d28"><span>28</span></td>
                         <td></td>
-                        <td class="col-0">Sun</td>
-                        <td class="col-1">Mon</td>
-                        <td class="col-2">Tue</td>
-                        <td class="col-3">Wed</td>
-                        <td class="col-4">Thu</td>
-                        <td class="col-5">Fri</td>
-                        <td class="col-6">Sat</td>
+                        <td class="col-0"><span>Sun</span></td>
+                        <td class="col-1"><span>Mon</span></td>
+                        <td class="col-2"><span>Tue</span></td>
+                        <td class="col-3"><span>Wed</span></td>
+                        <td class="col-4"><span>Thu</span></td>
+                        <td class="col-5"><span>Fri</span></td>
+                        <td class="col-6"><span>Sat</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -208,7 +209,7 @@
             for (let year = 0; year < 5; year++) {
                 const table = document.importNode(template, true); // Clone
                 now.setFullYear(currentYear + year);
-                table.querySelector(".year").textContent = now.getFullYear();
+                table.querySelector(".year span").textContent = now.getFullYear();
                 
                 for (let day = 0; day < 7; day++) {
                     for (let month = 0; month < 12; month++) {
@@ -225,7 +226,9 @@
 
                         if (now.getDay() == day) {
                             const div = document.createElement("div");
-                            div.textContent = months[month];
+                            const span = document.createElement("span");
+                            span.textContent = months[month];
+                            div.appendChild(span);
                             table.querySelector(`thead .col-${day}`).appendChild(div);
                             div.classList.add(`d${future.getDate()}`);
                             div.setAttribute("title", `${future.getDate()} days`);
