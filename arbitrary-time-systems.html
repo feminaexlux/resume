@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Arbitrary time systems</title>
+		<style>
+			html, body {
+				background-color: #000;
+				color: #fff;
+				font-family: "Consolas", monospace;
+				height: 100vh;
+				margin: 0;
+				padding: 0;
+				width: 100vw;
+			}
+
+			table {
+				font-size: 48px;
+				margin: 0 auto;
+			}
+
+			td {
+				padding: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>System</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Actual time</td>
+						<td id="actual_time">Now</td>
+					</tr>
+					<tr>
+						<td>Base 62</td>
+						<td id="base62_time">Now</td>
+					</tr>
+					<tr>
+						<td>Percentage of day</td>
+						<td id="percentage_time">Now</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script>
+			const base62 = [];
+			const startOfDay = new Date();
+			startOfDay.setHours(0, 0, 0);
+
+			const cap = "A".charCodeAt(0);
+			const low = "a".charCodeAt(0);
+			for (let i = 0; i < 26; i++) {
+				base62[i] = String.fromCharCode(cap + i);
+				base62[i + 26] = String.fromCharCode(low + i);
+				if (i < 10) {
+					base62[i + 52] = i;
+				}
+			}
+
+			function getTimes() {
+				const now = new Date();
+				document.getElementById("actual_time").textContent = now.toLocaleTimeString();
+
+				const base62h = base62[now.getHours()];
+				const base62m = base62[now.getMinutes()];
+				const base62s = base62[now.getSeconds()];
+				document.getElementById("base62_time").textContent = `${base62h}:${base62m}:${base62s}`;
+
+				const per = (now.getTime() - startOfDay.getTime()) / (24 * 60 * 60 * 10);
+				document.getElementById("percentage_time").textContent = `${per.toFixed(2)}%`;
+			}
+
+			getTimes();
+			setInterval(getTimes, 500);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en_US">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>Some calendar thing</title>
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <style>
+            body {
+                background-color: var(--bs-dark);
+                color: var(--bs-light);
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+
+            table {
+                border: 1px solid var(--bs-gray);
+                margin: 2.5rem auto;
+            }
+
+            th {
+                vertical-align: bottom;
+            }
+
+            th.year {
+                font-size: x-large;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+
+            td {
+                width: 40px;
+            }
+
+            td.num {
+                font-weight: bold;
+            }
+
+            .d28, .d29, .d30, .d31 {
+                color: var(--bs-dark);
+            }
+
+            .d28 {
+                background-color: #fcc;
+            }
+
+            .d29 {
+                background-color: #ffc;
+            }
+
+            .d30 {
+                background-color: #cfc;
+            }
+
+            .d31 {
+                background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <main class="row">
+            <div id="calendars-original" class="col"></div>
+            <div id="calendars-compact" class="col"></div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(function() {
+                var now = new Date();
+                var currentYear = now.getFullYear();
+                const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+                const numCols = Math.ceil(31/7);
+                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                function generateOriginal() {
+                    var tbody = buildOriginalTbody();
+                    
+                    for (var year = 0; year < 10; year++) {
+                        var table = $("<table>");
+                        now.setFullYear(currentYear + year);
+
+                        var thead = $("<thead>");
+                        var spacer = $("<th>", {"colspan": numCols, "class":"year"}).text(currentYear + year);
+
+                        thead.append(spacer);
+
+                        for (var day = 0; day < days.length; day++) {
+                            var cell = $("<th>");
+
+                            for (var month = 0; month < months.length; month++) {
+                                now.setMonth(month);
+                                now.setDate(1);
+                                // javascript starts the week on Sunday
+                                var actualDay = (day + 1) % days.length;
+                                if (now.getDay() != actualDay) continue;
+
+                                var monthDiv = $("<div>").text(months[month]);
+                                cell.append(monthDiv);
+
+                                var future = new Date(now);
+                                var next = month + 1;
+                                if (next == months.length) {
+                                    future.setFullYear(now.getFullYear() + 1);
+                                }
+
+                                future.setMonth(next % months.length);
+                                var lastDayMs = future.getTime() - 1000 * 60 * 60 * 24;
+                                future = new Date(lastDayMs);
+                                monthDiv.attr("class", `d${future.getDate()}`)
+                            }
+
+                            thead.append(cell);
+                        }
+
+                        table.append(tbody.clone());
+                        table.append(thead);
+                        $("#calendars-original").append(table);
+                    }
+                }
+
+                function buildOriginalTbody() {
+                    var tbody = $("<tbody>");
+
+                    for (var rows = 0; rows < days.length; rows++) {
+                        var row = $("<tr>");
+                        
+                        for (var dayNumCol = 0; dayNumCol < numCols; dayNumCol++) {
+                            var value = rows + days.length * dayNumCol + 1;
+                            var cell = $("<td>", { "class": `num d${value}` });
+
+                            row.append(cell);
+                            
+                            if (value > 31) break;
+
+                            cell.text(value);
+                        }
+
+                        for (var day = 0; day < days.length; day++) {
+                            var cell = $("<td>");
+                            cell.text(days[(day + rows) % days.length]);
+                            row.append(cell);
+                        }
+
+                        tbody.append(row);
+                    }
+
+                    return tbody;
+                }
+
+                generateOriginal();
+            });
+        </script>
+    </body>
+</html>
