@@ -1,7 +1,10 @@
 <!doctype html>
 <html>
 	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
 		<title>Arbitrary time systems</title>
+
 		<style>
 			html, body {
 				background-color: #000;
@@ -50,13 +53,6 @@
 		</div>
 		<script>
 			const base62 = [];
-			const startOfYear = new Date();
-			startOfYear.setMonth(0, 1);
-			startOfYear.setHours(0, 0, 0);
-
-			const startOfDay = new Date();
-			startOfDay.setHours(0, 0, 0);
-
 			const cap = "A".charCodeAt(0);
 			const low = "a".charCodeAt(0);
 			for (let i = 0; i < 26; i++) {
@@ -68,6 +64,13 @@
 			}
 
 			function getTimes() {
+				const startOfYear = new Date();
+				startOfYear.setMonth(0, 1);
+				startOfYear.setHours(0, 0, 0);
+
+				const startOfDay = new Date();
+				startOfDay.setHours(0, 0, 0);
+
 				const now = new Date();
 				document.getElementById("actual_time").textContent = now.toString();
 
