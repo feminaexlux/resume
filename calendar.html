@@ -216,12 +216,12 @@
             const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
             function setCalendars() {
-                const existing = main.querySelectorAll(".calendar");
-                for (const item of existing) item.remove();
-
                 const date = new Date();
                 date.setHours(0, 0, 0);
                 if (date.getDate() == today.getDate() && displayed) return;
+
+                const existing = main.querySelectorAll(".calendar");
+                for (const item of existing) item.remove();
 
                 for (let year = today.getFullYear(); year < (today.getFullYear() + 5); year++) {
                     date.setFullYear(year);
