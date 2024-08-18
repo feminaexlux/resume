@@ -23,7 +23,7 @@
             }
 
             tbody tr:hover {
-                background-color: rgba(128, 64, 0, 0.5);
+                background-color: rgba(128, 0, 0, 0.5);
             }
 
             th {
@@ -36,217 +36,238 @@
                 vertical-align: middle;
             }
 
+            th div {
+                padding: 0.5rem;
+            }
+
+            th div.today {
+                padding: 0.5rem 0.25rem;
+            }
+
             td {
                 padding: 0.25rem;
                 text-align: center;
                 width: 40px;
             }
 
-            td.today span {
+            .today span {
                 border: 2px solid #fff;
                 border-radius: 1rem;
                 padding: 0.25rem;
             }
 
-            .d28,
-            .d29,
-            .d30,
-            .d31 {
+            .date-28,
+            .date-29,
+            .date-30,
+            .date-31 {
                 color: #000;
             }
 
-            .d28 {
+            .date-28 {
                 background-color: #faa;
             }
 
-            .d29 {
+            .date-29 {
                 background-color: #fe8;
             }
 
-            .d30 {
+            .date-30 {
                 background-color: #8c8;
             }
 
-            .d31 {
+            .date-31 {
                 background-color: #88f;
             }
 
             .today {
                 color: #fff;
             }
+
+            .today.date-28,
+            .today.date-29,
+            .today.date-30,
+            .today.date-31 {
+                color: #000;
+            }
         </style>
     </head>
     <body>
         <main id="main">
-            <table>
+            <table id="template" hidden>
                 <thead>
                     <tr>
                         <th class="year" colspan="5"><span>Year</span></th>
-                        <th class="col-1"></th>
-                        <th class="col-2"></th>
-                        <th class="col-3"></th>
-                        <th class="col-4"></th>
-                        <th class="col-5"></th>
-                        <th class="col-6"></th>
-                        <th class="col-0"></th>
+                        <th class="day-1"></th>
+                        <th class="day-2"></th>
+                        <th class="day-3"></th>
+                        <th class="day-4"></th>
+                        <th class="day-5"></th>
+                        <th class="day-6"></th>
+                        <th class="day-0"></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><span>1</span></td>
-                        <td><span>8</span></td>
-                        <td><span>15</span></td>
-                        <td><span>22</span></td>
-                        <td class="d29"><span>29</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
+                    <tr class="row-1">
+                        <td class="date-1"><span>1</span></td>
+                        <td class="date-8"><span>8</span></td>
+                        <td class="date-15"><span>15</span></td>
+                        <td class="date-22"><span>22</span></td>
+                        <td class="date-29"><span>29</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
                     </tr>
-                    <tr>
-                        <td><span>2</span></td>
-                        <td><span>9</span></td>
-                        <td><span>16</span></td>
-                        <td><span>23</span></td>
-                        <td class="d30"><span>30</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
+                    <tr class="row-2">
+                        <td class="date-2"><span>2</span></td>
+                        <td class="date-9"><span>9</span></td>
+                        <td class="date-16"><span>16</span></td>
+                        <td class="date-23"><span>23</span></td>
+                        <td class="date-30"><span>30</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
                     </tr>
-                    <tr>
-                        <td><span>3</span></td>
-                        <td><span>10</span></td>
-                        <td><span>17</span></td>
-                        <td><span>24</span></td>
-                        <td class="d31"><span>31</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
+                    <tr class="row-3">
+                        <td class="date-3"><span>3</span></td>
+                        <td class="date-10"><span>10</span></td>
+                        <td class="date-17"><span>17</span></td>
+                        <td class="date-24"><span>24</span></td>
+                        <td class="date-31"><span>31</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
                     </tr>
-                    <tr>
-                        <td><span>4</span></td>
-                        <td><span>11</span></td>
-                        <td><span>18</span></td>
-                        <td><span>25</span></td>
+                    <tr class="row-4">
+                        <td class="date-4"><span>4</span></td>
+                        <td class="date-11"><span>11</span></td>
+                        <td class="date-18"><span>18</span></td>
+                        <td class="date-25"><span>25</span></td>
                         <td></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
                     </tr>
-                    <tr>
-                        <td><span>5</span></td>
-                        <td><span>12</span></td>
-                        <td><span>19</span></td>
-                        <td><span>26</span></td>
+                    <tr class="row-5">
+                        <td class="date-5"><span>5</span></td>
+                        <td class="date-12"><span>12</span></td>
+                        <td class="date-19"><span>19</span></td>
+                        <td class="date-26"><span>26</span></td>
                         <td></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
                     </tr>
-                    <tr>
-                        <td><span>6</span></td>
-                        <td><span>13</span></td>
-                        <td><span>20</span></td>
-                        <td><span>27</span></td>
+                    <tr class="row-6">
+                        <td class="date-6"><span>6</span></td>
+                        <td class="date-13"><span>13</span></td>
+                        <td class="date-20"><span>20</span></td>
+                        <td class="date-27"><span>27</span></td>
                         <td></td>
-                        <td class="col-6"><span>Sat</span></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
                     </tr>
-                    <tr>
-                        <td><span>7</span></td>
-                        <td><span>14</span></td>
-                        <td><span>21</span></td>
-                        <td class="d28"><span>28</span></td>
+                    <tr class="row-0">
+                        <td class="date-7"><span>7</span></td>
+                        <td class="date-14"><span>14</span></td>
+                        <td class="date-21"><span>21</span></td>
+                        <td class="date-28"><span>28</span></td>
                         <td></td>
-                        <td class="col-0"><span>Sun</span></td>
-                        <td class="col-1"><span>Mon</span></td>
-                        <td class="col-2"><span>Tue</span></td>
-                        <td class="col-3"><span>Wed</span></td>
-                        <td class="col-4"><span>Thu</span></td>
-                        <td class="col-5"><span>Fri</span></td>
-                        <td class="col-6"><span>Sat</span></td>
+                        <td class="day-0"><span>Sun</span></td>
+                        <td class="day-1"><span>Mon</span></td>
+                        <td class="day-2"><span>Tue</span></td>
+                        <td class="day-3"><span>Wed</span></td>
+                        <td class="day-4"><span>Thu</span></td>
+                        <td class="day-5"><span>Fri</span></td>
+                        <td class="day-6"><span>Sat</span></td>
                     </tr>
                 </tbody>
             </table>
         </main>
 
         <script>
-            const today = new Date();
-            const now = new Date();
-            now.setHours(0, 0, 0);
-
-            const currentYear = now.getFullYear();
+            let today = new Date();
+            let displayed = false;
+            const main = document.getElementById("main");
             const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-            let template = document.importNode(document.getElementsByTagName("table")[0], true);
-            const main = document.getElementById("main");
-            main.removeChild(main.firstElementChild);
+            function setCalendars() {
+                const existing = main.querySelectorAll(".calendar");
+                for (const item of existing) item.remove();
 
-            for (let year = 0; year < 5; year++) {
-                const table = document.importNode(template, true); // Clone
-                now.setFullYear(currentYear + year);
-                table.querySelector(".year span").textContent = now.getFullYear();
-                
-                for (let day = 0; day < 7; day++) {
-                    for (let month = 0; month < 12; month++) {
-                        now.setDate(1);
-                        now.setMonth(month);
+                const date = new Date();
+                date.setHours(0, 0, 0);
+                if (date.getDate() == today.getDate() && displayed) return;
 
-                        const future = new Date(now);
+                for (let year = today.getFullYear(); year < (today.getFullYear() + 5); year++) {
+                    date.setFullYear(year);
+
+                    const table = document.importNode(document.getElementById("template"), true);
+                    table.setAttribute("id", `year-${year}`);
+                    table.hidden = false;
+                    table.classList.add("calendar");
+                    table.querySelector(".year span").textContent = date.getFullYear();
+                    
+                    for (let month = 0; month < months.length; month++) {
+                        date.setDate(1);
+                        date.setMonth(month);
+
+                        const future = new Date(date);
                         if (month + 1 >= months.length) {
-                            future.setFullYear(currentYear + 1);
+                            future.setFullYear(year + 1);
                         }
 
                         future.setMonth((month + 1) % months.length);
                         future.setTime(future.getTime() - 60000); // A minute before
 
-                        if (now.getDay() == day) {
-                            const div = document.createElement("div");
-                            const span = document.createElement("span");
-                            span.textContent = months[month];
-                            div.appendChild(span);
-                            table.querySelector(`thead .col-${day}`).appendChild(div);
-                            div.classList.add(`d${future.getDate()}`);
-                            div.setAttribute("title", `${future.getDate()} days`);
-
-                            if (now.getFullYear() == today.getFullYear() && month == today.getMonth()) div.classList.add("today");
-                        }
+                        const div = document.createElement("div");
+                        const span = document.createElement("span");
+                        span.textContent = months[month];
+                        div.appendChild(span);
+                        table.querySelector(`thead .day-${date.getDay()}`).appendChild(div);
+                        div.classList.add(`date-${future.getDate()}`);
+                        div.classList.add(`month-${month}`);
+                        div.setAttribute("title", `${future.getDate()} days`);
                     }
+
+                    main.appendChild(table);
                 }
 
-                main.appendChild(table);
+                const todayTable = document.getElementById(`year-${today.getFullYear()}`);
+                todayTable.querySelector(".year").classList.add("today");
+                todayTable.querySelector(`thead .month-${today.getMonth()}`).classList.add("today");
+                todayTable.querySelector(`tbody .date-${today.getDate()}`).classList.add("today");
+                todayTable.querySelector(`tbody .row-${today.getDate() % 7} .day-${today.getDay()}`).classList.add("today");
+
+                displayed = true;
             }
 
-            const todayTable = document.getElementsByTagName("table")[0];
-            todayTable.querySelector(".year").classList.add("today");
-            const row = todayTable.querySelector(`tbody tr:nth-child(${today.getDate() % 7})`);
-            const dateColumn = Math.ceil(today.getDate() / 7);
-            row.querySelector(`td:nth-child(${dateColumn})`).classList.add("today");
-            row.querySelector(`.col-${today.getDay()}`).classList.add("today");
+            setCalendars();
+            setInterval(setCalendars, 1000 * 60);
         </script>
     </body>
 </html>
